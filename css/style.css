@@ -1862,23 +1862,49 @@ textarea.form-control {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 100svh;
-    padding-top: calc(var(--nav-height) + 2rem);
+    min-height: auto;
+    position: relative;
+    padding-top: calc(var(--nav-height) + 1.5rem);
     padding-bottom: 3.5rem;
   }
 
   .hero-video-bg {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: min(70vh, 520px);
+    overflow: hidden;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.95) 55%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.95) 55%, rgba(0, 0, 0, 0) 100%);
   }
 
   .hero-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center center;
+    object-fit: contain;
+    object-position: center top;
+    transform: none;
+  }
+
+  .hero-video-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      radial-gradient(ellipse at 50% 35%, rgba(12, 8, 9, 0.15) 0%, rgba(12, 8, 9, 0.55) 75%, var(--bg-primary) 100%),
+      linear-gradient(180deg, rgba(12, 8, 9, 0.3) 0%, rgba(12, 8, 9, 0.15) 40%, var(--bg-primary) 100%);
+  }
+
+  [data-theme="light"] .hero-video-overlay {
+    background:
+      radial-gradient(ellipse at 50% 35%, rgba(255, 250, 245, 0.2) 0%, rgba(255, 250, 245, 0.65) 75%, var(--bg-primary) 100%),
+      linear-gradient(180deg, rgba(255, 250, 245, 0.4) 0%, rgba(255, 250, 245, 0.2) 40%, var(--bg-primary) 100%);
   }
 
   .mobile-toggle {
@@ -1961,6 +1987,10 @@ textarea.form-control {
   .hero {
     padding-top: calc(var(--nav-height) + 1.25rem);
     padding-bottom: 2.5rem;
+  }
+
+  .hero-video-bg {
+    height: min(60vh, 420px);
   }
 
   .hero-title {
