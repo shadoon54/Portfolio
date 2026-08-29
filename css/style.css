@@ -1864,7 +1864,7 @@ textarea.form-control {
   .hero {
     min-height: auto;
     position: relative;
-    padding-top: calc(var(--nav-height) + 1.5rem);
+    padding-top: calc(var(--nav-height) + 2rem);
     padding-bottom: 3.5rem;
   }
 
@@ -1873,22 +1873,27 @@ textarea.form-control {
     top: 0;
     left: 0;
     width: 100%;
-    height: min(70vh, 520px);
+    height: 100%;
+    max-height: 100svh;
     overflow: hidden;
     pointer-events: none;
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.95) 55%, rgba(0, 0, 0, 0) 100%);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.95) 55%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-mask-image: radial-gradient(ellipse 95% 85% at 50% 50%, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0.85) 75%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(ellipse 95% 85% at 50% 50%, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0.85) 75%, rgba(0, 0, 0, 0) 100%);
   }
 
   .hero-bg-video {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
+    max-width: 100%;
     object-fit: contain;
-    object-position: center top;
-    transform: none;
+    object-position: center center;
   }
 
   .hero-video-overlay {
@@ -1897,14 +1902,14 @@ textarea.form-control {
     width: 100%;
     height: 100%;
     background:
-      radial-gradient(ellipse at 50% 35%, rgba(12, 8, 9, 0.15) 0%, rgba(12, 8, 9, 0.55) 75%, var(--bg-primary) 100%),
-      linear-gradient(180deg, rgba(12, 8, 9, 0.3) 0%, rgba(12, 8, 9, 0.15) 40%, var(--bg-primary) 100%);
+      radial-gradient(ellipse at 50% 50%, rgba(12, 8, 9, 0.15) 0%, rgba(12, 8, 9, 0.55) 70%, var(--bg-primary) 100%),
+      linear-gradient(180deg, rgba(12, 8, 9, 0.45) 0%, rgba(12, 8, 9, 0.1) 40%, rgba(12, 8, 9, 0.65) 80%, var(--bg-primary) 100%);
   }
 
   [data-theme="light"] .hero-video-overlay {
     background:
-      radial-gradient(ellipse at 50% 35%, rgba(255, 250, 245, 0.2) 0%, rgba(255, 250, 245, 0.65) 75%, var(--bg-primary) 100%),
-      linear-gradient(180deg, rgba(255, 250, 245, 0.4) 0%, rgba(255, 250, 245, 0.2) 40%, var(--bg-primary) 100%);
+      radial-gradient(ellipse at 50% 50%, rgba(255, 250, 245, 0.2) 0%, rgba(255, 250, 245, 0.65) 70%, var(--bg-primary) 100%),
+      linear-gradient(180deg, rgba(255, 250, 245, 0.4) 0%, rgba(255, 250, 245, 0.15) 40%, var(--bg-primary) 100%);
   }
 
   .mobile-toggle {
@@ -1987,10 +1992,6 @@ textarea.form-control {
   .hero {
     padding-top: calc(var(--nav-height) + 1.25rem);
     padding-bottom: 2.5rem;
-  }
-
-  .hero-video-bg {
-    height: min(60vh, 420px);
   }
 
   .hero-title {
