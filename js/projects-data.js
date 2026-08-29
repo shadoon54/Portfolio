@@ -37,12 +37,12 @@ const PORTFOLIO_DATA = {
     },
     contact: {
       email: "Shadoon-2424@hotmail.com",
-      phone: "+966 50 565 5009",
+      phone: "+966 xxx xxx xx",
       locationEn: "Taif, Saudi Arabia",
       locationAr: "الطائف، المملكة العربية السعودية",
       github: "https://github.com/shadoon54",
       linkedin: "https://www.linkedin.com/in/shaden-alsalmi-0b7b1140a/",
-      twitter: "https://x.com/home",
+      twitter: "https://x.com/shadoon542",
       resumeUrl: "#"
     }
   },
