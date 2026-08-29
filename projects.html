@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projects Catalog | Shaden Alsalmi</title>
+  <meta name="title" content="Projects Catalog | Shaden Alsalmi">
+  <meta name="description" content="Explore software applications, 2D desktop adventure games, and interactive web tools developed by Shaden Alsalmi.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23ff5e36'/><text x='50%' y='65%' font-size='55' font-weight='900' font-family='sans-serif' text-anchor='middle' fill='%23ffffff'>SA</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Abstract Background Shapes (Modern Geometric & Organic Accents) -->
+  <div class="bg-abstract-shapes" aria-hidden="true">
+    <!-- SVG Definitions for Gradients -->
+    <svg width="0" height="0" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <defs>
+        <linearGradient id="shapeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ff2a5f" />
+          <stop offset="50%" stop-color="#ff5e36" />
+          <stop offset="100%" stop-color="#ffd000" />
+        </linearGradient>
+        <linearGradient id="shapeGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#ff9900" />
+          <stop offset="100%" stop-color="#ff416c" />
+        </linearGradient>
+        <linearGradient id="shapeGradFill" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ff5e36" stop-opacity="0.1" />
+          <stop offset="100%" stop-color="#ff2a5f" stop-opacity="0.02" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <!-- Soft Ambient Glow Orbs -->
+    <div class="bg-ambient-orb bg-orb-1"></div>
+    <div class="bg-ambient-orb bg-orb-2"></div>
+
+    <!-- 1. Top-Right Concentric Dashed Ring -->
+    <svg class="abstract-shape shape-ring-tr" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="150" cy="150" r="135" stroke="url(#shapeGrad1)" stroke-width="1.5" stroke-dasharray="10 8" opacity="0.8" />
+      <circle cx="150" cy="150" r="95" stroke="url(#shapeGrad2)" stroke-width="1" opacity="0.55" />
+      <circle cx="150" cy="150" r="55" stroke="#ff9900" stroke-width="1" stroke-dasharray="4 5" opacity="0.65" />
+    </svg>
+
+    <!-- 2. Top-Left Floating Abstract Diamond -->
+    <svg class="abstract-shape shape-diamond-tl" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="20" width="60" height="60" rx="14" transform="rotate(45 50 50)" stroke="url(#shapeGrad1)" stroke-width="1.8" fill="url(#shapeGradFill)" />
+      <circle cx="50" cy="50" r="6" fill="#ff5e36" opacity="0.85" />
+    </svg>
+
+    <!-- 3. Center-Left Floating Pill / Capsule -->
+    <svg class="abstract-shape shape-pill-cl" viewBox="0 0 180 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="2" width="176" height="66" rx="33" stroke="url(#shapeGrad2)" stroke-width="1.5" fill="url(#shapeGradFill)" />
+      <line x1="40" y1="35" x2="140" y2="35" stroke="url(#shapeGrad1)" stroke-width="1.2" stroke-dasharray="5 5" opacity="0.65" />
+    </svg>
+
+    <!-- 4. Center-Right Dot Matrix -->
+    <svg class="abstract-shape shape-dots-cr" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#ff9900" opacity="0.65">
+        <circle cx="15" cy="15" r="2.5" /><circle cx="45" cy="15" r="2.5" /><circle cx="75" cy="15" r="2.5" /><circle cx="105" cy="15" r="2.5" />
+        <circle cx="15" cy="45" r="2.5" /><circle cx="45" cy="45" r="2.5" /><circle cx="75" cy="45" r="2.5" /><circle cx="105" cy="45" r="2.5" />
+        <circle cx="15" cy="75" r="2.5" /><circle cx="45" cy="75" r="2.5" /><circle cx="75" cy="75" r="2.5" /><circle cx="105" cy="75" r="2.5" />
+        <circle cx="15" cy="105" r="2.5" /><circle cx="45" cy="105" r="2.5" /><circle cx="75" cy="105" r="2.5" /><circle cx="105" cy="105" r="2.5" />
+      </g>
+    </svg>
+
+    <!-- 5. Bottom-Right Curved Flow Arcs -->
+    <svg class="abstract-shape shape-arcs-br" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 240 C 90 140, 160 80, 240 20" stroke="url(#shapeGrad1)" stroke-width="2" stroke-linecap="round" opacity="0.75" />
+      <path d="M60 250 C 120 170, 180 120, 250 60" stroke="url(#shapeGrad2)" stroke-width="1.5" stroke-dasharray="6 6" stroke-linecap="round" opacity="0.65" />
+      <path d="M100 255 C 150 190, 200 150, 255 100" stroke="#ffd000" stroke-width="1" stroke-linecap="round" opacity="0.45" />
+    </svg>
+
+    <!-- 6. Bottom-Left Hexagon / Polygon -->
+    <svg class="abstract-shape shape-poly-bl" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="60,10 105,35 105,85 60,110 15,85 15,35" stroke="url(#shapeGrad1)" stroke-width="1.6" fill="url(#shapeGradFill)" />
+      <circle cx="60" cy="60" r="14" stroke="#ff9900" stroke-width="1" stroke-dasharray="2 3" opacity="0.7" />
+    </svg>
+
+    <!-- 7. Floating Plus Accents (+) -->
+    <svg class="abstract-shape shape-cross-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 4v16M4 12h16" stroke="#ff5e36" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+    </svg>
+    <svg class="abstract-shape shape-cross-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 4v16M4 12h16" stroke="#ffd000" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+    </svg>
+  </div>
+
+  <!-- Fixed Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html#hero" class="nav-brand">
+        <div class="brand-icon">SA</div>
+        <span>Shaden Alsalmi</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html#hero" class="nav-link" data-i18n="navHome">Home</a>
+        <a href="projects.html" class="nav-link active" data-i18n="navProjects">Projects</a>
+        <a href="index.html#certifications" class="nav-link" data-i18n="navCertifications">Certifications</a>
+        <a href="index.html#skills" class="nav-link" data-i18n="navSkills">Skills</a>
+        <a href="index.html#contact" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Language Switcher, Theme Switcher & Mobile Menu Toggle) -->
+      <div class="nav-actions">
+        <!-- Language Switcher Button (Arabic / English) -->
+        <button class="lang-toggle-btn" id="lang-toggle-btn" aria-label="Switch Language" title="Switch Language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span id="lang-toggle-text">العربية</span>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <!-- Moon Icon (Dark Mode) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Light Mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Projects Showcase Section -->
+  <main class="section" style="padding-top: calc(var(--nav-height) + 3rem); min-height: 85vh;">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <div class="section-header">
+        <a href="index.html" style="display: inline-flex; align-items: center; gap: 0.4rem; color: var(--accent-yellow); font-size: 0.95rem; font-weight: 700; margin-bottom: 1rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span data-i18n="projectsPageBackHome">Back to Home</span>
+        </a>
+        <h1 class="section-title"><span data-i18n="projectsPageTitle">Projects &</span> <span class="gradient-text" data-i18n="projectsPageSpan">Engineering Works</span></h1>
+        <p class="section-desc" data-i18n="projectsPageDesc">
+          Browse through all featured systems, desktop games, and interactive web applications. Filter by category or search by keywords.
+        </p>
+      </div>
+
+      <!-- Filter & Search Bar -->
+      <div class="projects-filter-bar">
+        <div class="search-input-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="project-search" class="search-input" placeholder="Search by title or stack (e.g. Java, React, Python)..." data-i18n-placeholder="searchPlaceholder">
+        </div>
+
+        <div class="filter-pills">
+          <button class="filter-btn active" data-filter="all" data-i18n="filterAll">All Works</button>
+          <button class="filter-btn" data-filter="software" data-i18n="filterSoftware">Desktop & Games</button>
+          <button class="filter-btn" data-filter="web" data-i18n="filterWeb">Web Development</button>
+        </div>
+      </div>
+
+      <!-- Full Projects Grid -->
+      <div class="projects-grid" id="all-projects-grid">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Bottom Call To Action -->
+      <div class="cta-projects-wrapper" style="margin-top: 5rem;">
+        <div class="cta-ambient-glow"></div>
+        <div class="cta-content">
+          <h3 class="cta-title" data-i18n="ctaProjectsPageTitle">Interested in collaborating or discussing projects?</h3>
+          <p class="cta-desc" data-i18n="ctaProjectsPageDesc">
+            Let's discuss how my computer science and software development skills can add value.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="index.html#contact" class="btn btn-primary btn-lg">
+              <span data-i18n="btnGetInTouch">Contact Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="index.html#hero" class="btn btn-secondary btn-lg">
+              <span data-i18n="projectsPageBackHome">Back to Home</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="nav-brand">
+          <div class="brand-icon">SA</div>
+          <span>Shaden Alsalmi</span>
+        </div>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="index.html#hero" class="nav-link" data-i18n="navHome">Home</a>
+          <a href="projects.html" class="nav-link" data-i18n="navProjects">Projects</a>
+          <a href="index.html#certifications" class="nav-link" data-i18n="navCertifications">Certifications</a>
+          <a href="index.html#skills" class="nav-link" data-i18n="navSkills">Skills</a>
+          <a href="index.html#contact" class="nav-link" data-i18n="navContact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shaden Alsalmi. <span data-i18n="footerCopy">Built with precision, vibrant gradients & modern web standards.</span></p>
+        <p>Computer Science & Artificial Intelligence</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reusable Modal Container -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-content" id="modal-content-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
