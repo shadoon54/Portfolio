@@ -458,18 +458,17 @@ h6 {
 
 .hero-bg-video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center center;
   z-index: 0;
   opacity: 0.92;
   filter: saturate(1.25) brightness(0.96) contrast(1.05);
   transition: opacity var(--transition-slow);
+  pointer-events: none;
 }
 
 /* Refined, Transparent Vignette & Tint Overlay for Maximum Video Visibility */
@@ -1862,6 +1861,26 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: 100svh;
+    padding-top: calc(var(--nav-height) + 2rem);
+    padding-bottom: 3.5rem;
+  }
+
+  .hero-video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
   .mobile-toggle {
     display: block;
   }
@@ -1939,6 +1958,11 @@ textarea.form-control {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding-top: calc(var(--nav-height) + 1.25rem);
+    padding-bottom: 2.5rem;
+  }
+
   .hero-title {
     font-size: 2.25rem;
   }
